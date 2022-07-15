@@ -31,7 +31,7 @@ class Settings extends Model
 
     public $customMessages = [];
 
-    public function __construct(){
+    public function __construct(array $attributes = []){
         $this->customMessages['valid_tinypng_key'] = Lang::get('toughdeveloper.imageresizer::lang.settings.tinypng_invalid_key');
 
         parent::__construct();
